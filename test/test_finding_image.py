@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.finding_image import FindingImage  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.models.finding_image import FindingImage  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestFindingImage(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestFindingImage(unittest.TestCase):
     def testFindingImage(self):
         """Test FindingImage"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.finding_image.FindingImage()  # noqa: E501
+        # model = djclient.models.finding_image.FindingImage()  # noqa: E501
         pass
 
 

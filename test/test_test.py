@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.test import Test  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.models.test import Test  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestTest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTest(unittest.TestCase):
     def testTest(self):
         """Test Test"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.test.Test()  # noqa: E501
+        # model = djclient.models.test.Test()  # noqa: E501
         pass
 
 

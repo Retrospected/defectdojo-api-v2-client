@@ -1,4 +1,4 @@
-# openapi_client.EngagementsApi
+# djclient.EngagementsApi
 
 All URIs are relative to *http://localhost:8080/api/v2*
 
@@ -26,10 +26,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -38,9 +38,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.EngagementsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.EngagementsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this engagement.
-data = openapi_client.Engagement() # Engagement | 
+data = djclient.Engagement() # Engagement | 
 
 try:
     api_response = api_instance.engagements_close(id, data)
@@ -87,10 +87,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -99,8 +99,8 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.EngagementsApi(openapi_client.ApiClient(configuration))
-data = openapi_client.Engagement() # Engagement | 
+api_instance = djclient.EngagementsApi(djclient.ApiClient(configuration))
+data = djclient.Engagement() # Engagement | 
 
 try:
     api_response = api_instance.engagements_create(data)
@@ -146,10 +146,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -158,7 +158,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.EngagementsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.EngagementsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this engagement.
 
 try:
@@ -204,10 +204,10 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -216,9 +216,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.EngagementsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.EngagementsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this engagement.
-data = openapi_client.Engagement() # Engagement | 
+data = djclient.Engagement() # Engagement | 
 
 try:
     api_response = api_instance.engagements_generate_report(id, data)
@@ -265,10 +265,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -277,7 +277,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.EngagementsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.EngagementsApi(djclient.ApiClient(configuration))
 limit = 56 # int | Number of results to return per page. (optional)
 offset = 56 # int | The initial index from which to return the results. (optional)
 
@@ -326,10 +326,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -338,9 +338,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.EngagementsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.EngagementsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this engagement.
-data = openapi_client.Engagement() # Engagement | 
+data = djclient.Engagement() # Engagement | 
 
 try:
     api_response = api_instance.engagements_partial_update(id, data)
@@ -387,10 +387,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -399,7 +399,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.EngagementsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.EngagementsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this engagement.
 
 try:
@@ -446,10 +446,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -458,9 +458,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.EngagementsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.EngagementsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this engagement.
-data = openapi_client.Engagement() # Engagement | 
+data = djclient.Engagement() # Engagement | 
 
 try:
     api_response = api_instance.engagements_reopen(id, data)
@@ -507,10 +507,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -519,9 +519,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.EngagementsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.EngagementsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this engagement.
-data = openapi_client.Engagement() # Engagement | 
+data = djclient.Engagement() # Engagement | 
 
 try:
     api_response = api_instance.engagements_update(id, data)

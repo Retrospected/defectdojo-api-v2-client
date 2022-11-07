@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.development_environment import DevelopmentEnvironment  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.models.development_environment import DevelopmentEnvironment  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestDevelopmentEnvironment(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDevelopmentEnvironment(unittest.TestCase):
     def testDevelopmentEnvironment(self):
         """Test DevelopmentEnvironment"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.development_environment.DevelopmentEnvironment()  # noqa: E501
+        # model = djclient.models.development_environment.DevelopmentEnvironment()  # noqa: E501
         pass
 
 

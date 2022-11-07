@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.reimport_scan_api import ReimportScanApi  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.api.reimport_scan_api import ReimportScanApi  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestReimportScanApi(unittest.TestCase):
     """ReimportScanApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.reimport_scan_api.ReimportScanApi()  # noqa: E501
+        self.api = djclient.api.reimport_scan_api.ReimportScanApi()  # noqa: E501
 
     def tearDown(self):
         pass

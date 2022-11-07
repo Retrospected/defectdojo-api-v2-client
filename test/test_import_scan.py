@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.import_scan import ImportScan  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.models.import_scan import ImportScan  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestImportScan(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestImportScan(unittest.TestCase):
     def testImportScan(self):
         """Test ImportScan"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.import_scan.ImportScan()  # noqa: E501
+        # model = djclient.models.import_scan.ImportScan()  # noqa: E501
         pass
 
 

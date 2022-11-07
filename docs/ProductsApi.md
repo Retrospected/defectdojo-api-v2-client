@@ -1,4 +1,4 @@
-# openapi_client.ProductsApi
+# djclient.ProductsApi
 
 All URIs are relative to *http://localhost:8080/api/v2*
 
@@ -23,10 +23,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -35,8 +35,8 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.ProductsApi(openapi_client.ApiClient(configuration))
-data = openapi_client.Product() # Product | 
+api_instance = djclient.ProductsApi(djclient.ApiClient(configuration))
+data = djclient.Product() # Product | 
 
 try:
     api_response = api_instance.products_create(data)
@@ -82,10 +82,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -94,9 +94,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.ProductsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.ProductsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this product.
-data = openapi_client.Product() # Product | 
+data = djclient.Product() # Product | 
 
 try:
     api_response = api_instance.products_generate_report(id, data)
@@ -143,10 +143,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -155,7 +155,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.ProductsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.ProductsApi(djclient.ApiClient(configuration))
 limit = 56 # int | Number of results to return per page. (optional)
 offset = 56 # int | The initial index from which to return the results. (optional)
 
@@ -204,10 +204,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -216,9 +216,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.ProductsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.ProductsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this product.
-data = openapi_client.Product() # Product | 
+data = djclient.Product() # Product | 
 
 try:
     api_response = api_instance.products_partial_update(id, data)
@@ -265,10 +265,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -277,7 +277,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.ProductsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.ProductsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this product.
 
 try:
@@ -324,10 +324,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -336,9 +336,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.ProductsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.ProductsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this product.
-data = openapi_client.Product() # Product | 
+data = djclient.Product() # Product | 
 
 try:
     api_response = api_instance.products_update(id, data)

@@ -1,4 +1,4 @@
-packageName: "openapi_client"
+packageName: "djclient"
 projectName: "defectdojo-api-v2-client"
 packageVersion: "0.0.1"
 # packageUrl":

@@ -1,4 +1,4 @@
-# openapi_client.JiraFindingMappingsApi
+# djclient.JiraFindingMappingsApi
 
 All URIs are relative to *http://localhost:8080/api/v2*
 
@@ -23,10 +23,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -35,8 +35,8 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.JiraFindingMappingsApi(openapi_client.ApiClient(configuration))
-data = openapi_client.JIRAIssue() # JIRAIssue | 
+api_instance = djclient.JiraFindingMappingsApi(djclient.ApiClient(configuration))
+data = djclient.JIRAIssue() # JIRAIssue | 
 
 try:
     api_response = api_instance.jira_finding_mappings_create(data)
@@ -82,10 +82,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -94,7 +94,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.JiraFindingMappingsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.JiraFindingMappingsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this jir a_ issue.
 
 try:
@@ -140,10 +140,10 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -152,7 +152,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.JiraFindingMappingsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.JiraFindingMappingsApi(djclient.ApiClient(configuration))
 id = 3.4 # float |  (optional)
 jira_id = 'jira_id_example' # str |  (optional)
 jira_key = 'jira_key_example' # str |  (optional)
@@ -207,10 +207,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -219,9 +219,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.JiraFindingMappingsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.JiraFindingMappingsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this jir a_ issue.
-data = openapi_client.JIRAIssue() # JIRAIssue | 
+data = djclient.JIRAIssue() # JIRAIssue | 
 
 try:
     api_response = api_instance.jira_finding_mappings_partial_update(id, data)
@@ -268,10 +268,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -280,7 +280,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.JiraFindingMappingsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.JiraFindingMappingsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this jir a_ issue.
 
 try:
@@ -327,10 +327,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -339,9 +339,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.JiraFindingMappingsApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.JiraFindingMappingsApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this jir a_ issue.
-data = openapi_client.JIRAIssue() # JIRAIssue | 
+data = djclient.JIRAIssue() # JIRAIssue | 
 
 try:
     api_response = api_instance.jira_finding_mappings_update(id, data)

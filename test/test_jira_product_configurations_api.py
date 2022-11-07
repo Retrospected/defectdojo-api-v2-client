@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.jira_product_configurations_api import JiraProductConfigurationsApi  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.api.jira_product_configurations_api import JiraProductConfigurationsApi  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestJiraProductConfigurationsApi(unittest.TestCase):
     """JiraProductConfigurationsApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.jira_product_configurations_api.JiraProductConfigurationsApi()  # noqa: E501
+        self.api = djclient.api.jira_product_configurations_api.JiraProductConfigurationsApi()  # noqa: E501
 
     def tearDown(self):
         pass

@@ -1,4 +1,4 @@
-# openapi_client.FindingTemplatesApi
+# djclient.FindingTemplatesApi
 
 All URIs are relative to *http://localhost:8080/api/v2*
 
@@ -22,10 +22,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -34,8 +34,8 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.FindingTemplatesApi(openapi_client.ApiClient(configuration))
-data = openapi_client.FindingTemplate() # FindingTemplate | 
+api_instance = djclient.FindingTemplatesApi(djclient.ApiClient(configuration))
+data = djclient.FindingTemplate() # FindingTemplate | 
 
 try:
     api_response = api_instance.finding_templates_create(data)
@@ -81,10 +81,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -93,7 +93,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.FindingTemplatesApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.FindingTemplatesApi(djclient.ApiClient(configuration))
 id = 3.4 # float |  (optional)
 title = 'title_example' # str |  (optional)
 cwe = 3.4 # float |  (optional)
@@ -154,10 +154,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -166,9 +166,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.FindingTemplatesApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.FindingTemplatesApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this finding_ template.
-data = openapi_client.FindingTemplate() # FindingTemplate | 
+data = djclient.FindingTemplate() # FindingTemplate | 
 
 try:
     api_response = api_instance.finding_templates_partial_update(id, data)
@@ -215,10 +215,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -227,7 +227,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.FindingTemplatesApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.FindingTemplatesApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this finding_ template.
 
 try:
@@ -274,10 +274,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -286,9 +286,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.FindingTemplatesApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.FindingTemplatesApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this finding_ template.
-data = openapi_client.FindingTemplate() # FindingTemplate | 
+data = djclient.FindingTemplate() # FindingTemplate | 
 
 try:
     api_response = api_instance.finding_templates_update(id, data)

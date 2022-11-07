@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.jira_issue import JIRAIssue  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.models.jira_issue import JIRAIssue  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestJIRAIssue(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestJIRAIssue(unittest.TestCase):
     def testJIRAIssue(self):
         """Test JIRAIssue"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.jira_issue.JIRAIssue()  # noqa: E501
+        # model = djclient.models.jira_issue.JIRAIssue()  # noqa: E501
         pass
 
 

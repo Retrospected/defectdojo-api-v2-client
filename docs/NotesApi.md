@@ -1,4 +1,4 @@
-# openapi_client.NotesApi
+# djclient.NotesApi
 
 All URIs are relative to *http://localhost:8080/api/v2*
 
@@ -21,10 +21,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -33,7 +33,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.NotesApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.NotesApi(djclient.ApiClient(configuration))
 id = 3.4 # float |  (optional)
 entry = 'entry_example' # str |  (optional)
 author = 'author_example' # str |  (optional)
@@ -98,10 +98,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -110,9 +110,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.NotesApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.NotesApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this notes.
-data = openapi_client.Note() # Note | 
+data = djclient.Note() # Note | 
 
 try:
     api_response = api_instance.notes_partial_update(id, data)
@@ -159,10 +159,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -171,7 +171,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.NotesApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.NotesApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this notes.
 
 try:
@@ -218,10 +218,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import djclient
+from djclient.rest import ApiException
 from pprint import pprint
-configuration = openapi_client.Configuration()
+configuration = djclient.Configuration()
 # Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -230,9 +230,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Defining host is optional and default to http://localhost:8080/api/v2
 configuration.host = "http://localhost:8080/api/v2"
 # Create an instance of the API class
-api_instance = openapi_client.NotesApi(openapi_client.ApiClient(configuration))
+api_instance = djclient.NotesApi(djclient.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this notes.
-data = openapi_client.Note() # Note | 
+data = djclient.Note() # Note | 
 
 try:
     api_response = api_instance.notes_update(id, data)

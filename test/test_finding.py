@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.finding import Finding  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.models.finding import Finding  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestFinding(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestFinding(unittest.TestCase):
     def testFinding(self):
         """Test Finding"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.finding.Finding()  # noqa: E501
+        # model = djclient.models.finding.Finding()  # noqa: E501
         pass
 
 

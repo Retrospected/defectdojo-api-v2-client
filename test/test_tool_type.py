@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.tool_type import ToolType  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.models.tool_type import ToolType  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestToolType(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestToolType(unittest.TestCase):
     def testToolType(self):
         """Test ToolType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.tool_type.ToolType()  # noqa: E501
+        # model = djclient.models.tool_type.ToolType()  # noqa: E501
         pass
 
 

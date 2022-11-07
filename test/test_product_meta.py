@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.product_meta import ProductMeta  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.models.product_meta import ProductMeta  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestProductMeta(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestProductMeta(unittest.TestCase):
     def testProductMeta(self):
         """Test ProductMeta"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.product_meta.ProductMeta()  # noqa: E501
+        # model = djclient.models.product_meta.ProductMeta()  # noqa: E501
         pass
 
 

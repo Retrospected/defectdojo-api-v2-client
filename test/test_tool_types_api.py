@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.tool_types_api import ToolTypesApi  # noqa: E501
-from openapi_client.rest import ApiException
+import djclient
+from djclient.api.tool_types_api import ToolTypesApi  # noqa: E501
+from djclient.rest import ApiException
 
 
 class TestToolTypesApi(unittest.TestCase):
     """ToolTypesApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.tool_types_api.ToolTypesApi()  # noqa: E501
+        self.api = djclient.api.tool_types_api.ToolTypesApi()  # noqa: E501
 
     def tearDown(self):
         pass
