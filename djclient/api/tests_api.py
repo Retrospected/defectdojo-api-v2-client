@@ -418,7 +418,7 @@ class TestsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['limit', 'offset']  # noqa: E501
+        all_params = ['limit', 'offset', 'engagement']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -442,6 +442,8 @@ class TestsApi(object):
             query_params.append(('limit', local_var_params['limit']))  # noqa: E501
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))  # noqa: E501
+        if 'engagement' in local_var_params:
+            query_params.append(('engagement', local_var_params['engagement']))  # noqa: E501
 
         header_params = {}
 
